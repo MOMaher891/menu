@@ -4,8 +4,8 @@
   "description": "Digital QR Menu & Admin Dashboard System",
   "main": "server.js",
   "scripts": {
-    "install-all": "npm install && npm install --prefix server && npm install --prefix client",
-    "postinstall": "npm install --prefix server && npm install --prefix client",
+    "install-all": "npm install && npm install --prefix server --ignore-scripts && npm install --prefix client --ignore-scripts",
+    "postinstall": "npm install --prefix server --ignore-scripts && npm install --prefix client --ignore-scripts",
     "seed": "node server/seed.js",
     "server": "npm run dev --prefix server",
     "client": "npm run dev --prefix client",
